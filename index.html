@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Baqi - Medical Learning Platform</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="home-page" class="page active">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-page="home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+                <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search fa-lg"></i>
+            </a>
+            <a href="#" class="text-primary me-4 position-relative">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1>Al-Baqi: Premier Online Learning for Medical Professionals</h1>
+            <p class="lead">
+              Al Baqi connects and supports the medical community with comprehensive courses, 
+              guidance, and resources for professionals and students at every career stage.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#" class="btn btn-primary btn-lg px-4" data-page="courses-page">
+                Explore Courses <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+              <a href="#" class="btn btn-outline-primary btn-lg px-4" data-page="registration-page">
+                Free Trial
+              </a>
+            </div>
+            <div class="d-flex align-items-center mt-4">
+              <div class="d-flex">
+                <img src="herosection.jpg" class="rounded-circle border border-3 border-white" width="40" height="40" alt="">
+                <img src="herosection2.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="">
+                <img src="herosection3.jpg" class="rounded-circle border border-3 border-white ms-n2" width="40" height="40" alt="">
+              </div>
+              <div class="ms-3">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-star text-warning me-1"></i>
+                  <span class="fw-bold">4.9</span>
+                  <span class="text-muted ms-2">(1.2k+ reviews)</span>
+                </div>
+                <small class="text-muted">Trusted by 3,000+ medical professionals</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <img src="herosectionMain.jpg" 
+                 class="img-fluid rounded-4 shadow" alt="Medical Learning">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-thumbs-up"></i>
+              </div>
+              <h3>Pass Exams with Confidence</h3>
+              <p>A better way to learn, practice and revise with our comprehensive exam preparation resources.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-book-reader"></i>
+              </div>
+              <h3>Expert-Led Learning</h3>
+              <p>Learn from experienced medical professionals who provide practical insights and guidance.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Track Your Progress</h3>
+              <p>Monitor your learning journey with detailed analytics and personalized recommendations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Courses</h2>
+          <p class="section-subtitle">Handpicked courses to boost your medical career</p>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Course 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card">
+              <img src="course1.jpg" 
+                   class="card-img-top" alt="Dentistry Course">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="course-badge">FCPS</span>
+                  <span class="text-muted"><i class="far fa-clock me-1"></i> 120 Hours</span>
+                </div>
+                <h5 class="card-title">FCPS Part One Dentistry Online Course</h5>
+                <p class="card-text text-muted">Comprehensive preparation for FCPS Part 1 Dentistry examination.</p>
+                
+                <div class="d-flex align-items-center mt-4 mb-3">
+                  <div class="me-3">
+                    <img src="DRahmad.jpg" class="rounded-circle" width="40" alt="Instructor">
+                  </div>
+                  <div>
+                    <p class="mb-0 small text-muted">Instructor</p>
+                    <p class="mb-0 fw-bold">Dr. Ahmed Khan</p>
+                  </div>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                  <div>
+                    <span class="fw-bold text-primary">Rs12,000</span>
+                    <span class="text-muted text-decoration-line-through ms-2">Rs18,000</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Course 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card">
+              <img src="course2.jpg" 
+                   class="card-img-top" alt="Medicine Course">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="course-badge">MD</span>
+                  <span class="text-muted"><i class="far fa-clock me-1"></i> 180 Hours</span>
+                </div>
+                <h5 class="card-title">MD Medicine Board Preparation</h5>
+                <p class="card-text text-muted">Complete review for MD Medicine certification examination.</p>
+                
+                <div class="d-flex align-items-center mt-4 mb-3">
+                  <div class="me-3">
+                    <img src="DRsara.jpg" class="rounded-circle" width="40" alt="Instructor">
+                  </div>
+                  <div>
+                    <p class="mb-0 small text-muted">Instructor</p>
+                    <p class="mb-0 fw-bold">Dr. Sara Ahmed</p>
+                  </div>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                  <div>
+                    <span class="fw-bold text-primary">Rs15,000</span>
+                    <span class="text-muted text-decoration-line-through ms-2">Rs22,000</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Course 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course-card">
+              <img src="course3.jpg" 
+                   class="card-img-top" alt="Surgery Course">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="course-badge">MRCS</span>
+                  <span class="text-muted"><i class="far fa-clock me-1"></i> 150 Hours</span>
+                </div>
+                <h5 class="card-title">MRCS Surgery Revision Course</h5>
+                <p class="card-text text-muted">Intensive preparation for the MRCS examination.</p>
+                
+                <div class="d-flex align-items-center mt-4 mb-3">
+                  <div class="me-3">
+                    <img src="DRusman.jpg" class="rounded-circle" width="40" alt="Instructor">
+                  </div>
+                  <div>
+                    <p class="mb-0 small text-muted">Instructor</p>
+                    <p class="mb-0 fw-bold">Dr. Usman Ali</p>
+                  </div>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                  <div>
+                    <span class="fw-bold text-primary">Rs14,500</span>
+                    <span class="text-muted text-decoration-line-through ms-2">Rs20,000</span>
+                  </div>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-primary px-4" data-page="courses-page">View All Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat-item">
+              <h3 class="stat-number">3,000+</h3>
+              <p>Medical Professionals</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat-item">
+              <h3 class="stat-number">120+</h3>
+              <p>Expert Instructors</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat-item">
+              <h3 class="stat-number">95%</h3>
+              <p>Pass Rate</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mb-4">
+            <div class="stat-item">
+              <h3 class="stat-number">24/7</h3>
+              <p>Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CARD SECTIONS-->
+
+<section class="courses-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-3">Explore Categories</h2>
+    <p class="section-subtitle text-center mb-5">Discover topics that interest you</p>
+    <div class="row g-4">
+      <!--1-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-microphone fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Voice Over</h5>
+          <p class="mb-0 text-muted">25 courses</p>
+        </div>
+      </div>
+      <!--2-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-paint-brush fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Art & Design</h5>
+          <p class="mb-0 text-muted">15 courses</p>
+        </div>
+      </div>
+      <!--3-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-music fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Music Production</h5>
+          <p class="mb-0 text-muted">12 courses</p>
+        </div>
+      </div>
+      <!--4-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-video fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Video Editing</h5>
+          <p class="mb-0 text-muted">18 courses</p>
+        </div>
+      </div>
+      <!--5-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-code fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Web Development</h5>
+          <p class="mb-0 text-muted">20 courses</p>
+        </div>
+      </div>
+      <!--6-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Marketing</h5>
+          <p class="mb-0 text-muted">22 courses</p>
+        </div>
+      </div>
+      <!--7-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-pen-nib fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Writing</h5>
+          <p class="mb-0 text-muted">10 courses</p>
+        </div>
+      </div>
+      <!--8-->
+      <div class="col-md-3 col-sm-6">
+        <div class="p-4 text-center bg-light rounded-3 shadow-sm h-100">
+          <i class="fas fa-camera fa-2x text-primary mb-3"></i>
+          <h5 class="text-primary">Photography</h5>
+          <p class="mb-0 text-muted">14 courses</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Success Stories</h2>
+          <p class="section-subtitle">What our students say about us</p>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text mb-4">
+                  "Al Baqi's FCPS preparation course was instrumental in helping me pass on my first attempt. The question bank and explanations are exceptional."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img src="DRaisha.jpg" class="rounded-circle me-3" width="50" alt="Student">
+                  <div>
+                    <h6 class="mb-0">Dr. Aisha Mahmood</h6>
+                    <small class="text-muted">FCPS Part 1 - Dentistry</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text mb-4">
+                  "The MD Medicine course covered everything I needed. The video lectures and practice questions were exactly what was tested on the exam."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img src="DrOmar.jpg" class="rounded-circle me-3" width="50" alt="Student">
+                  <div>
+                    <h6 class="mb-0">Dr. Omar Khan</h6>
+                    <small class="text-muted">MD Medicine</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body p-4">
+                <div class="mb-3 text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text mb-4">
+                  "As an international medical graduate, Al Baqi helped me understand the exam patterns and focus on high-yield topics efficiently."
+                </p>
+                <div class="d-flex align-items-center">
+                  <img src="DRfatima.jpg" class="rounded-circle me-3" width="50" alt="Student">
+                  <div>
+                    <h6 class="mb-0">Dr. Fatima Ali</h6>
+                    <small class="text-muted">MRCS Surgery</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="newsletter-title mb-4">Stay Updated With Our Latest Courses</h2>
+            <p class="mb-5">Subscribe to our newsletter to receive updates on new courses, special offers, and medical education resources.</p>
+            
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control newsletter-input" placeholder="Your email address" required>
+                <button class="btn btn-light btn-lg px-4" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-links">
+              <h5>Al Baqi</h5>
+              <p class="mt-3 text-white">
+                Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#" data-page="home-page">Home</a></li>
+                <li><a href="#" data-page="about-page">About Us</a></li>
+                <li><a href="#" data-page="courses-page">Courses</a></li>
+                <li><a href="#" data-page="blog-page">Blog</a></li>
+                <li><a href="#" data-page="registration-page">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Contact Us</h5>
+              <ul class="text-white">
+                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+                <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Blog Page -->
+  <div id="blog-page" class="page">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top"> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" data-page="home-page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-page="about-page">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                  Explore
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+                  <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="d-flex align-items-center">
+              <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fas fa-search fa-lg"></i>
+              </a>
+              <a href="#" class="text-primary me-4 position-relative">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  3
+                </span>
+              </a>
+              <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    
+    <section class="page-header">
+      <div class="container text-center">
+        <h1 class="page-title">Medical Insights Blog</h1>
+      </div>
+    </section>
+    
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <!-- Featured Post -->
+            <div class="card border-0 shadow-sm mb-5">
+              <img src="blogMain.jpg" 
+                   class="card-img-top rounded-3" alt="Featured Post">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center mb-3">
+                  <span class="badge bg-primary me-2">Featured</span>
+                  <small class="text-muted">June 15, 2023 • 8 min read</small>
+                </div>
+                <h2 class="card-title">How to Prepare for FCPS Part 1: A Comprehensive Guide</h2>
+                <p class="card-text mt-3">
+                  Preparing for the FCPS Part 1 examination can be daunting, but with the right strategy and resources, 
+                  you can maximize your chances of success. In this comprehensive guide, we'll walk you through...
+                </p>
+                <a href="#" class="btn btn-primary mt-3">Read More</a>
+              </div>
+            </div>
+            
+            <!-- Blog Posts Grid -->
+            <div class="row g-4">
+              <!-- Post 1 -->
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="course3.jpg" 
+                       class="card-img-top" alt="Blog Post">
+                  <div class="card-body">
+                    <small class="text-muted">May 28, 2023 • 5 min read</small>
+                    <h5 class="card-title mt-2">Time Management Strategies for Medical Students</h5>
+                    <p class="card-text text-muted">
+                      Effective time management is crucial for medical students juggling coursework, clinical rotations, and exam preparation...
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0">
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Post 2 -->
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="course1.jpg" 
+                       class="card-img-top" alt="Blog Post">
+                  <div class="card-body">
+                    <small class="text-muted">May 15, 2023 • 6 min read</small>
+                    <h5 class="card-title mt-2">The Ultimate Guide to Medical Residency Applications</h5>
+                    <p class="card-text text-muted">
+                      Navigating the medical residency application process can be complex. Learn how to strengthen your application...
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0">
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Post 3 -->
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="herosectionMain.jpg" 
+                       class="card-img-top" alt="Blog Post">
+                  <div class="card-body">
+                    <small class="text-muted">April 30, 2023 • 4 min read</small>
+                    <h5 class="card-title mt-2">High-Yield Study Techniques for Medical Exams</h5>
+                    <p class="card-text text-muted">
+                      Discover evidence-based study techniques that can help you retain more information in less time for your medical exams...
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0">
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Post 4 -->
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                  <img src="course2.jpg" 
+                       class="card-img-top" alt="Blog Post">
+                  <div class="card-body">
+                    <small class="text-muted">April 18, 2023 • 7 min read</small>
+                    <h5 class="card-title mt-2">Balancing Clinical Work and Exam Preparation</h5>
+                    <p class="card-text text-muted">
+                      Tips from successful residents on how to effectively balance your clinical responsibilities with exam preparation...
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0">
+                    <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav aria-label="Blog pagination" class="mt-5">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                </li>
+              </ul>
+            </nav>
+          </div>
+          
+          <!-- Sidebar -->
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Search Articles</h5>
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control" placeholder="Search...">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Categories</h5>
+                <ul class="list-group list-group-flush mt-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <a href="#" class="text-decoration-none">Exam Preparation</a>
+                    <span class="badge bg-primary rounded-pill">14</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <a href="#" class="text-decoration-none">Study Techniques</a>
+                    <span class="badge bg-primary rounded-pill">8</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <a href="#" class="text-decoration-none">Career Advice</a>
+                    <span class="badge bg-primary rounded-pill">5</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <a href="#" class="text-decoration-none">Medical News</a>
+                    <span class="badge bg-primary rounded-pill">12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <a href="#" class="text-decoration-none">Success Stories</a>
+                    <span class="badge bg-primary rounded-pill">7</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="card border-0 shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Popular Tags</h5>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <a href="#" class="btn btn-sm btn-outline-primary">#FCPS</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">#MD</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">#MRCS</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">#StudyTips</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">#Residency</a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">#MedicalEducation</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Subscribe</h5>
+                <p class="card-text text-muted small mt-3">
+                  Get the latest articles and medical education resources delivered to your inbox.
+                </p>
+                <form class="mt-3">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your email" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-links">
+              <h5>Al Baqi</h5>
+              <p class="mt-3 text-white">
+                Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#" data-page="home-page">Home</a></li>
+                <li><a href="#" data-page="about-page">About Us</a></li>
+                <li><a href="#" data-page="courses-page">Courses</a></li>
+                <li><a href="#" data-page="blog-page">Blog</a></li>
+                <li><a href="#" data-page="registration-page">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Contact Us</h5>
+              <ul class="text-white">
+                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+                <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Courses Page -->
+<div id="courses-page" class="page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-page="home-page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-page="about-page">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+              Explore
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+              <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="d-flex align-items-center">
+          <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search fa-lg"></i>
+          </a>
+          <a href="#" class="text-primary me-4 position-relative">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+            </span>
+          </a>
+          <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h2 class="mb-0">All Courses</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-md-end">
+            <div class="dropdown me-2">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown">
+                <i class="fas fa-filter me-2"></i>Filter
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                <li><a class="dropdown-item" href="#">FCPS</a></li>
+                <li><a class="dropdown-item" href="#">MD</a></li>
+                <li><a class="dropdown-item" href="#">MRCS</a></li>
+                <li><a class="dropdown-item" href="#">Specialty</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown">
+                <i class="fas fa-sort me-2"></i>Sort By
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Newest</a></li>
+                <li><a class="dropdown-item" href="#">Popular</a></li>
+                <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Course 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course1.jpg" 
+                 class="card-img-top" alt="FCPS Part 1 Medicine">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">FCPS</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 150 Hours</span>
+              </div>
+              <h5 class="card-title">FCPS Part 1 Medicine Complete Course</h5>
+              <p class="card-text text-muted">Comprehensive preparation for FCPS Part 1 Medicine examination with 1000+ practice questions.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DRahmad.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Ahmed Khan</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs15,000</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs20,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course2.jpg" 
+                 class="card-img-top" alt="MD Medicine">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">MD</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 200 Hours</span>
+              </div>
+              <h5 class="card-title">MD Medicine Board Certification Prep</h5>
+              <p class="card-text text-muted">Complete review course for MD Medicine certification with clinical case studies.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DRsara.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Sara Ahmed</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs18,000</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs25,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course3.jpg" 
+                 class="card-img-top" alt="MRCS Surgery">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">MRCS</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 180 Hours</span>
+              </div>
+              <h5 class="card-title">MRCS Part A Intensive Review</h5>
+              <p class="card-text text-muted">Complete anatomy and physiology review for MRCS Part A examination.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DRusman.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Usman Ali</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs16,500</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs22,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course4.jpg" 
+                 class="card-img-top" alt="FCPS Dentistry">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">FCPS</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 120 Hours</span>
+              </div>
+              <h5 class="card-title">FCPS Part 1 Dentistry Mastery</h5>
+              <p class="card-text text-muted">Specialized course covering all aspects of FCPS Part 1 Dentistry examination.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DRfatima.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Fatima Ali</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs14,000</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs18,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course5.jpg" 
+                 class="card-img-top" alt="Pediatrics">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">Specialty</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 100 Hours</span>
+              </div>
+              <h5 class="card-title">Pediatrics Board Review</h5>
+              <p class="card-text text-muted">Comprehensive review of pediatric medicine for board certification.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DrOmar.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Omar Khan</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs12,500</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs16,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="course-card">
+            <img src="course6.jpg" 
+                 class="card-img-top" alt="Gynecology">
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="course-badge">Specialty</span>
+                <span class="text-muted"><i class="far fa-clock me-1"></i> 90 Hours</span>
+              </div>
+              <h5 class="card-title">Gynecology & Obstetrics Review</h5>
+              <p class="card-text text-muted">Complete review of gynecology and obstetrics for postgraduate exams.</p>
+              
+              <div class="d-flex align-items-center mt-4 mb-3">
+                <div class="me-3">
+                  <img src="DRaisha.jpg" class="rounded-circle" width="40" alt="Instructor">
+                </div>
+                <div>
+                  <p class="mb-0 small text-muted">Instructor</p>
+                  <p class="mb-0 fw-bold">Dr. Aisha Mahmood</p>
+                </div>
+              </div>
+              
+              <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                <div>
+                  <span class="fw-bold text-primary">Rs11,000</span>
+                  <span class="text-muted text-decoration-line-through ms-2">Rs15,000</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-outline-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Course pagination" class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+    
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-links">
+            <h5>Al Baqi</h5>
+            <p class="mt-3 text-white">
+              Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#" data-page="home-page">Home</a></li>
+              <li><a href="#" data-page="about-page">About Us</a></li>
+              <li><a href="#" data-page="courses-page">Courses</a></li>
+              <li><a href="#" data-page="blog-page">Blog</a></li>
+              <li><a href="#" data-page="registration-page">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links">
+            <h5>Contact Us</h5>
+            <ul class="text-white">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-5">
+      
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+  <!-- About Page -->
+  <div id="about-page" class="page">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top"> -->
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-page="home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+                <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search fa-lg"></i>
+            </a>
+            <a href="#" class="text-primary me-4 position-relative">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="page-header">
+      <div class="container text-center">
+        <h1 class="page-title">About Al Baqi</h1>
+        <p class="lead text-muted">Transforming medical education through innovative learning</p>
+        
+      </div>
+    </section>
+    
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Our Mission</h2>
+            <p class="lead">
+              To provide the highest quality medical education resources that empower healthcare professionals to excel in their careers.
+            </p>
+            <p>
+              Al Baqi was founded in 2015 by a group of medical educators who recognized the need for more accessible, 
+              high-quality exam preparation resources for medical professionals in our region. What began as a small 
+              question bank has grown into a comprehensive learning platform serving thousands of doctors across 
+              multiple specialties.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="aboutus1.jpg" 
+                 class="img-fluid rounded-4 shadow" alt="Our Mission">
+          </div>
+        </div>
+        
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 order-lg-2">
+            <h2 class="mb-4">Our Approach</h2>
+            <p>
+              We combine evidence-based learning science with practical clinical knowledge to create the most effective 
+              preparation tools. Our team of expert physicians and educators continuously update our content to reflect 
+              the latest exam patterns and medical knowledge.
+            </p>
+            <p>
+              Unlike traditional resources, our platform adapts to each learner's strengths and weaknesses, providing 
+              personalized recommendations to maximize study efficiency.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <img src="aboutus2.jpg" 
+                 class="img-fluid rounded-4 shadow" alt="Our Approach">
+          </div>
+        </div>
+        
+        <div class="text-center my-5 py-4">
+          <h2 class="mb-4">Our Team</h2>
+          <p class="lead mx-auto" style="max-width: 700px;">
+            Meet the dedicated physicians and educators who make Al Baqi the premier medical learning platform
+          </p>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Team members would go here -->
+        </div>
+      </div>
+    </section>
+    
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-links">
+            <h5>Al Baqi</h5>
+            <p class="mt-3 text-white">
+              Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="#" data-page="home-page">Home</a></li>
+              <li><a href="#" data-page="about-page">About Us</a></li>
+              <li><a href="#" data-page="courses-page">Courses</a></li>
+              <li><a href="#" data-page="blog-page">Blog</a></li>
+              <li><a href="#" data-page="registration-page">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-links">
+            <h5>Contact Us</h5>
+            <ul class="text-white">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+              <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="my-5">
+      
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+  <!-- Registration Page -->
+  <div id="registration-page" class="page">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top"> -->
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-page="home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+                <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search fa-lg"></i>
+            </a>
+            <a href="#" class="text-primary me-4 position-relative">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="page-header">
+      <div class="container text-center">
+        <h1 class="page-title">Create Your Account</h1>
+        <p class="lead text-muted">Join thousands of medical professionals advancing their careers</p>
+      </div>
+    </section>
+    
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 class="mb-4">Sign Up</h2>
+                    <form>
+                      <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                        <label class="form-check-label" for="termsCheck">
+                          I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                    
+                    <div class="text-center mt-4">
+                      <p class="mb-0">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a></p>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="p-4 text-center">
+                      <img src="aboutus2.jpg" 
+                           class="img-fluid mb-4 rounded-3" alt="Medical Learning">
+                      <h5 class="mb-3">Why Join Al Baqi?</h5>
+                      <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Access to all courses</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Personalized learning paths</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Expert instructor support</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Progress tracking</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Community forums</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-links">
+              <h5>Al Baqi</h5>
+              <p class="mt-3 text-white">
+                Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#" data-page="home-page">Home</a></li>
+                <li><a href="#" data-page="about-page">About Us</a></li>
+                <li><a href="#" data-page="courses-page">Courses</a></li>
+                <li><a href="#" data-page="blog-page">Blog</a></li>
+                <li><a href="#" data-page="registration-page">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Contact Us</h5>
+              <ul class="text-white">
+                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+                <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Explore Pages (Instructors & Resources) -->
+   <!-- Instructors Page -->
+  <div id="instructors-page" class="page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="#" data-page="instructors-page">Instructors</a></li>
+                <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search fa-lg"></i>
+            </a>
+            <a href="#" class="text-primary me-4 position-relative">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="page-header">
+      <div class="container text-center">
+        <h1 class="page-title">Our Expert Instructors</h1>
+        <p class="lead text-muted">Learn from experienced medical professionals and educators</p>
+      </div>
+    </section>
+    
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Instructor 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DRahmad.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Ahmed Khan</h5>
+                <p class="text-primary mb-3">FCPS, MD (Medicine)</p>
+                <p class="card-text text-muted">
+                  Senior Consultant Physician with 15+ years of experience in medical education and FCPS preparation.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Internal Medicine</span>
+                  <span class="badge bg-light text-dark">FCPS</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Instructor 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DRsara.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Sara Ahmed</h5>
+                <p class="text-primary mb-3">PhD, FRCS (Surgery)</p>
+                <p class="card-text text-muted">
+                  Renowned surgeon and educator specializing in MRCS and surgical board exam preparation.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Surgery</span>
+                  <span class="badge bg-light text-dark">MRCS</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Instructor 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DRusman.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Usman Ali</h5>
+                <p class="text-primary mb-3">BDS, MDS (Dentistry)</p>
+                <p class="card-text text-muted">
+                  Dental specialist with extensive experience in FCPS Dentistry exam preparation and clinical practice.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Dentistry</span>
+                  <span class="badge bg-light text-dark">FCPS</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Instructor 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DRfatima.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Fatima Ali</h5>
+                <p class="text-primary mb-3">MBBS, FCPS (Pediatrics)</p>
+                <p class="card-text text-muted">
+                  Pediatric specialist with a passion for teaching and simplifying complex medical concepts.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Pediatrics</span>
+                  <span class="badge bg-light text-dark">FCPS</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Instructor 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DrOmar.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Omar Khan</h5>
+                <p class="text-primary mb-3">MD, FRCP (Cardiology)</p>
+                <p class="card-text text-muted">
+                  Cardiologist and medical educator with expertise in USMLE and MD Medicine exam preparation.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Cardiology</span>
+                  <span class="badge bg-light text-dark">MD</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Instructor 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="DRaisha.jpg" class="card-img-top" alt="Instructor">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dr. Aisha Mahmood</h5>
+                <p class="text-primary mb-3">MBBS, FCPS (Gynecology)</p>
+                <p class="card-text text-muted">
+                  Gynecologist and medical educator specializing in women's health and postgraduate exam preparation.
+                </p>
+                <div class="mt-4">
+                  <span class="badge bg-light text-dark me-2">Gynecology</span>
+                  <span class="badge bg-light text-dark">FCPS</span>
+                </div>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                <a href="#" class="btn btn-outline-primary">View Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-links">
+              <h5>Al Baqi</h5>
+              <p class="mt-3 text-white">
+                Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#" data-page="home-page">Home</a></li>
+                <li><a href="#" data-page="about-page">About Us</a></li>
+                <li><a href="#" data-page="courses-page">Courses</a></li>
+                <li><a href="#" data-page="blog-page">Blog</a></li>
+                <li><a href="#" data-page="registration-page">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Contact Us</h5>
+              <ul class="text-white">
+                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+                <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  
+     <!-- Resource -->
+      <!-- Navbar -->
+      <div id="resources-page" class="page">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" data-page="home-page">Al Baqi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-page="home-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="blog-page">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="courses-page">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="about-page">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-page="registration-page">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="exploreDropdown" role="button" data-bs-toggle="dropdown">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-page="instructors-page">Instructors</a></li>
+                <li><a class="dropdown-item" href="#" data-page="resources-page">Resources</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search fa-lg"></i>
+            </a>
+            <a href="#" class="text-primary me-4 position-relative">
+              <i class="fas fa-shopping-cart fa-lg"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </span>
+            </a>
+            <a href="#" class="btn btn-outline-primary px-4" data-page="registration-page">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+     <div class="col-lg-4 col-md-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-primary bg-opacity-10 p-3 rounded me-3">
+              <i class="fas fa-video text-primary fa-lg"></i>
+            </div>
+            <h5 class="mb-0">MRCS Anatomy Video Series</h5>
+          </div>
+          <p class="card-text text-muted">
+            50+ hours of video lectures covering all anatomy topics tested in the MRCS examination.
+          </p>
+          <div class="mt-4">
+            <span class="badge bg-light text-dark me-2">MRCS</span>
+            <span class="badge bg-light text-dark">Video Lectures</span>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="#" class="btn btn-outline-primary">View Resource</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Resource 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-primary bg-opacity-10 p-3 rounded me-3">
+              <i class="fas fa-file-pdf text-primary fa-lg"></i>
+            </div>
+            <h5 class="mb-0">MD Medicine Study Guide</h5>
+          </div>
+          <p class="card-text text-muted">
+            Comprehensive 300-page study guide covering high-yield topics for MD Medicine board exams.
+          </p>
+          <div class="mt-4">
+            <span class="badge bg-light text-dark me-2">MD</span>
+            <span class="badge bg-light text-dark">Study Guide</span>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="#" class="btn btn-outline-primary">View Resource</a>
+        </div>
+      </div>
+    </div>
+    
+   
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-links">
+              <h5>Al Baqi</h5>
+              <p class="mt-3 text-white">
+                Dedicated to fostering the premier online learning experience specifically designed for medical professionals.
+              </p>
+              <div class="social-icons mt-4">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-4">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#" data-page="home-page">Home</a></li>
+                <li><a href="#" data-page="about-page">About Us</a></li>
+                <li><a href="#" data-page="courses-page">Courses</a></li>
+                <li><a href="#" data-page="blog-page">Blog</a></li>
+                <li><a href="#" data-page="registration-page">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-links">
+              <h5>Contact Us</h5>
+              <ul class="text-white">
+                <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Medical St, Education City</li>
+                <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@albaqi.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+        
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-white">&copy; 2023 Al Baqi. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Search courses, articles, resources...">
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Log In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberCheck">
+              <label class="form-check-label" for="rememberCheck">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Log In</button>
+          </form>
+          
+          <div class="text-center mt-3">
+            <a href="#" class="text-decoration-none">Forgot password?</a>
+          </div>
+          
+          <div class="d-flex align-items-center my-4">
+            <hr class="flex-grow-1">
+            <span class="mx-3 text-muted">or</span>
+            <hr class="flex-grow-1">
+          </div>
+          
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary">
+              <i class="fab fa-google me-2"></i> Continue with Google
+            </button>
+            <button class="btn btn-outline-primary">
+              <i class="fab fa-facebook-f me-2"></i> Continue with Facebook
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <p class="mb-0">Don't have an account? <a href="#" data-page="registration-page">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and custom script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Page navigation functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to show a specific page
+      function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+        
+        // Show the requested page
+        const pageToShow = document.getElementById(pageId);
+        if (pageToShow) {
+          pageToShow.classList.add('active');
+          document.title = pageToShow.querySelector('.page-title') 
+            ? `${pageToShow.querySelector('.page-title').textContent} | Al Baqi` 
+            : 'Al Baqi - Medical Learning Platform';
+          
+          // Scroll to top
+          window.scrollTo(0, 0);
+        }
+        
+        // Close any open dropdowns
+        const dropdowns = document.querySelectorAll('.dropdown-menu');
+        dropdowns.forEach(dropdown => {
+          dropdown.classList.remove('show');
+        });
+        
+        // Close mobile navbar if open
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarCollapse.classList.remove('show');
+        }
+      }
+      
+      // Set up event listeners for all navigation links
+      document.querySelectorAll('[data-page]').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const pageId = this.getAttribute('data-page');
+          showPage(pageId);
+          
+          // Update active state in navbar
+          document.querySelectorAll('.nav-link').forEach(navLink => {
+            navLink.classList.remove('active');
+          });
+          
+          // Special handling for dropdown parent items
+          if (this.classList.contains('dropdown-item')) {
+            const parentLink = document.querySelector(`[aria-labelledby="exploreDropdown"]`);
+            if (parentLink) {
+              parentLink.classList.add('active');
+            }
+          } else if (this.classList.contains('nav-link')) {
+            this.classList.add('active');
+          }
+        });
+      });
+      
+      // Initialize with home page
+      showPage('home-page');
+      
+      // Handle browser back/forward buttons
+      window.addEventListener('popstate', function() {
+        const pageId = window.location.hash ? window.location.hash.substring(1) : 'home-page';
+        showPage(pageId);
+      });
+    });
+  </script>
+</body>
+</html>
